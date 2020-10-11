@@ -1,24 +1,19 @@
 import java.util.Random;
 
 public class Launcher {
-
     public static void main(String[] args) {
         int min = 0;
         int max = 0;
         int xRandom = 0;
         int aRandom = 0;
         int yRandom = 0;
-
         CircularQueue q = new CircularQueue(10);
-
         Random rnd = new Random();
         rnd.setSeed(3);
-
         for(int i = 0; i < 3; i++) {
             min = 1;
             max = 5;
             xRandom = rnd.nextInt((max - min) + 1) + min;
-
             for(int x = 0; x < xRandom; x++) {
                 min = 0;
                 max = 99;
